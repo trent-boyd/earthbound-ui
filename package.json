@@ -1,0 +1,28 @@
+{
+  "name": "earthbound-ui",
+  "version": "1.0.0",
+  "description": "Just playing around with some CSS-in-JS and Parcel. :)",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "dev": "parcel watch public/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Trent Boyd",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "normalize.css": "^8.0.1",
+    "react": "16.7.0",
+    "react-dom": "16.7.0"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.6",
+    "@types/react": "^16.7.17",
+    "@types/react-dom": "^16.0.11",
+    "parcel-bundler": "^1.11.0",
+    "prettier": "^1.15.3",
+    "sass": "^1.15.2",
+    "typescript": "^3.2.2"
+  }
+}

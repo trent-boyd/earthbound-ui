@@ -1,0 +1,14 @@
+$borderSize: 20;
+
+.window {
+  border-radius: #{$borderSize * 1.5}px;
+  border-style: solid;
+  border-width: #{$borderSize}px;
+  color: #f7f7f7;
+  padding: #{$borderSize * 0.6}px;
+}
+
+.plain {
+  border-image: url("/assets/window-borders/plain@4x.gif") $borderSize round;
+  background-color: #161616;
+}
