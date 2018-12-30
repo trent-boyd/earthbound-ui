@@ -1,14 +1,17 @@
-$borderSize: 20;
+$flavors-list: ("plain", "mint", "strawberry", "banana", "peanut");
+$borderSize: 32;
 
 .window {
+  background-color: #220d27;
+  border: #{$borderSize / 2}px solid;
   border-radius: #{$borderSize * 1.5}px;
-  border-style: solid;
-  border-width: #{$borderSize}px;
   color: #f7f7f7;
-  padding: #{$borderSize * 0.6}px;
+  font: 32px/1 "Apple Kid", monospace;
+  padding: #{$borderSize / 2}px;
 }
 
-.plain {
-  border-image: url("/assets/window-borders/plain@4x.gif") $borderSize round;
-  background-color: #161616;
+@each $flavor in $flavors-list {
+  .flavor-#{$flavor} {
+    border-image: url("/assets/borders/#{$flavor}.gif") $borderSize round;
+  }
 }

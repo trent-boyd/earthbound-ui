@@ -1,14 +1,22 @@
-body {
-  $size: 40px;
+@import "public/assets/webfonts/apple-kid";
 
-  // REF: https://codepen.io/corrinachow/pen/mpNOWw
+$square-size: 40px;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  // Credit: https://codepen.io/corrinachow/pen/mpNOWw
   background-image: linear-gradient(45deg, #80d890 25%, transparent 25%),
     linear-gradient(-45deg, #80d890 25%, transparent 25%),
     linear-gradient(45deg, transparent 75%, #80d890 75%),
     linear-gradient(-45deg, #68a8d8 75%, #80d890 75%);
-  background-size: $size $size;
-  background-position: 0 0, 0 #{$size/2}, #{$size/2} -#{$size/2},
-    -#{$size/2} 0px;
+  background-size: $square-size $square-size;
+  background-position: 0 0, 0 #{$square-size/2},
+    #{$square-size/2} -#{$square-size/2}, -#{$square-size/2} 0px;
   font-family: sans-serif;
   padding: 1rem;
 }
